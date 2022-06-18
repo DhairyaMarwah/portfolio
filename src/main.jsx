@@ -6,25 +6,25 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import Navbar from './components/Navbar';
-import Experience from './pages/Experience';
-import Education from './pages/Education';
-import Contact from './pages/Contact';
-import Footer from './components/Footer';
+import Home from "./Pages/Home.jsx";
+// import About from './pages/About';
+// import Navbar from './components/Navbar';
+// import Experience from './pages/Experience';
+// import Education from './pages/Education';
+// import Contact from './pages/Contact';
+// import Footer from './components/Footer';
 ReactDOM.render(
   <BrowserRouter>
-  <Navbar/>
+  {/* <Navbar/> */}
     <Routes>
-      {/* <Route path="/" element={<App />} /> */}
       <Route path="/" element={<Home />} />
       {/* <Route path="about" element={<About />} /> */}
+      {/* <Route path="/" element={<Home />} />
       <Route path="experience" element={<Experience />} />
       <Route path="education" element={<Education />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="contact" element={<Contact />} /> */}
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
   </BrowserRouter>,
   document.getElementById('root')
 );
